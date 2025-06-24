@@ -1,0 +1,64 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #222;
+  color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.burger-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* change to left: -250px for Hebrew */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+.side-menu.open {
+  right: 0; /* change to left: 0 for Hebrew */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 1rem;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+}
