@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional marketing and SEO services tailored to grow your business online." />
-  <meta name="keywords" content="SEO, Marketing, Website Development, Business Growth, Digital Marketing" />
-  <meta name="author" content="Tal Hadad" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RankMind</title>
-  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="icon" type="image/x-icon" href="./favico.ico">
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo">RankMind</div>
-    <div class="burger-icon" onclick="toggleMenu()">☰</div>
+  <header class="top-logo">
+    <img src="/Images/logo.png" alt="RankMind Logo">
   </header>
 
-  <nav id="side-menu" class="side-menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="hero">
+    <h1 class="logo">הכל <span class="highlight">בסדר</span></h1>
+    <p class="tagline">מערכות מתקדמות לסידור וארגון עסקי ואישי</p>
 
-  <main class="content">
-    <section id="home">
-      <h1>Welcome to RankMind</h1>
-      <p>We specialize in SEO and marketing to help businesses grow online.</p>
-    </section>
-    <!-- More sections go here -->
-  </main>
+    <button class="profile-button" onclick="location.href='./HTML/home.html'">
+      More Information
+    </button>
+    <button class="profile-button" onclick="location.href='./HTML/home.html'">
+      Contact
+    </button>
+  </div>
 
-  <script src="JS/script.js"></script>
+  <footer>
+    <p class="footer-text">RankMind © 2025</p>
+  </footer>
 </body>
 </html>

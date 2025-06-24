@@ -1,0 +1,104 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen layout */
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Logo */
+.top-logo {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-logo img {
+    max-width: 300px;
+    height: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.highlight {
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe766;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+/* Profile Button */
+.profile-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #00ffe7;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
+}
+
+.profile-button:hover {
+    background-color: rgba(0, 255, 231, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 14px rgba(0, 255, 231, 0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
