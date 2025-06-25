@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(160deg, #bf5ce3, #665696, #31599f);
     color: white;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ body {
 }
 
 .top-logo img {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     animation: fadeIn 1s ease-in-out;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .highlight {
-    color: #00ffe7;
+    color: #00d5ff;
     text-shadow: 0 0 8px #00ffe766;
 }
 
@@ -61,19 +61,20 @@ body {
 }
 
 /* Profile Button */
-.profile-button {
+.index-button {
     padding: 12px 24px;
-    font-size: 1rem;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
     color: #fff;
     background: transparent;
-    border: 2px solid #00ffe7;
+    border: 2px solid #00d5ff;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
 }
 
-.profile-button:hover {
+.index-button:hover {
     background-color: rgba(0, 255, 231, 0.1);
     transform: scale(1.05);
     box-shadow: 0 0 14px rgba(0, 255, 231, 0.6);
@@ -86,7 +87,7 @@ footer {
 }
 
 .footer-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0.5;
 }
 
