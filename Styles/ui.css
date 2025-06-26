@@ -7,14 +7,15 @@ body, html {
   color: #131313;
 }
 
-.main-header {
+#main-header {
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   background: #222;
   color: #fff;
-  position: relative;
+  position: sticky;
   z-index: 1000;
 }
 
@@ -32,7 +33,7 @@ body, html {
   position: fixed;
   top: 0;
   right: -250px; /* change to left: -250px for Hebrew */
-  width: 150px;
+  width: 125px;
   height: 100%;
   background-color: #333;
   color: white;
@@ -60,10 +61,10 @@ body, html {
 }
 
 .content {
-  padding: 2rem;
+  padding: 1.8rem;
 }
 
 .content-rtl {
-  padding: 2rem;
+  padding: 1.8rem;
   direction: rtl;
 }
