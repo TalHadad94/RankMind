@@ -1,21 +1,27 @@
-MIT License
+**Rank Mind Software License (THSL) v1.0**
 
-Copyright (c) 2025 RankMind
+Copyright (c) 2025 Rank Mind
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 1. License Grant
+Permission is hereby granted, free of charge, to any individual for personal, educational, and non-commercial purposes, including but not limited to learning, teaching, and academic research, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- The original copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+- Any modifications or derivative works must clearly state that they are based on this Software but do not claim to be the original work.
+- No part of this Software may be used for commercial purposes without prior written consent from the author (Rank Mind).
+- Redistribution of this Software, in part or whole, for commercial benefit is strictly prohibited.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 2. Commercial Use Restriction
+This Software may not be used in any manner that provides direct or indirect financial gain, including but not limited to:
+- Selling or licensing the Software or its derivatives.
+- Using the Software in proprietary applications.
+- Offering services that rely on this Software in exchange for payment.
+
+For commercial licensing inquiries, contact: contact@rankmind.net
+
+## 3. Disclaimer of Warranty
+This Software is provided "as is," without warranty of any kind, express or implied. In no event shall the author be liable for any claim, damages, or liability arising from the use of this Software.
+
+## 4. Termination
+Violation of any terms of this License will result in automatic termination of rights granted under this License. The author reserves the right to revoke access or take legal action if necessary.
+
+By using this Software, you acknowledge and agree to the terms outlined in this License.
