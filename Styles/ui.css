@@ -62,3 +62,8 @@ body, html {
 .content {
   padding: 2rem;
 }
+
+.content-rtl {
+  padding: 2rem;
+  direction: rtl;
+}
