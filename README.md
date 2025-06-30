@@ -52,10 +52,7 @@ Expect frequent updates and new branches showcasing:
 
 Each Git branch will contain different **breakpoints** or **template types**, such as:
 
-- `business-template`
-- `portfolio-template`
-- `restaurant-template`
-- `landing-page-basic`
+- `Template-site-breakpoint-1`
 - ...more coming soon
 
 ---
