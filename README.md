@@ -62,6 +62,6 @@ Each Git branch will contain different **breakpoints** or **template types**, su
 
 ## 📬 Contact
 
-Created with passion by **Tal Hadad**  
+Created with passion by **RankMind team**  
 📧 contact@rankmind.net  
 🌐 www.rankmind.net
