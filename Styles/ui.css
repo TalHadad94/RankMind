@@ -68,3 +68,11 @@ body, html {
   padding: 1.8rem;
   direction: rtl;
 }
+
+/* Footer */
+footer {
+  bottom: 0;
+  height: 25px;
+  text-align: center;
+  background-color: #3452e4c4;
+}
