@@ -33,8 +33,36 @@
 </head>
 
 <body>
+  <header id="main-header">
+    <div class="logo">RankMind</div>
+    <div class="burger-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./pricing.html">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Hebrew/contact.html">Change Language 🌐</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h1>Let's Talk</h1>
+    <p>We'd love to hear about your project, ideas, or even just say hello. Reach out and let's build something great together.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
   <footer>
     <p class="footer-text">RankMind © 2025</p>
   </footer>
+
+  <script src="../../Scripts/menu.js"></script>
 </body>
 </html>
