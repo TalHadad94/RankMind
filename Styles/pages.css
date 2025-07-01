@@ -1,4 +1,23 @@
 /* pages.css - shared page styles & animations */
+:root {
+  --brand-bg: #f9f9fc;
+  --brand-primary: #3452e4;
+  --brand-secondary: #6e84e6;
+  --brand-accent: #f04e98;
+  --brand-text: #1a1a1a;
+  --brand-muted: #808080;
+  --brand-white: #ffffff;
+  --brand-card: #ffffff;
+  --brand-gradient: linear-gradient(160deg, #bf5ce3, #665696, #31599f);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--brand-bg);
+  color: var(--brand-text);
+}
 
 /* Animation: Fade + Slide Up */
 @keyframes fadeSlideUp {
@@ -10,6 +29,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.content {
+  padding: 1.8rem;
+}
+
+.content-rtl {
+  padding: 1.8rem;
+  direction: rtl;
 }
 
 .content > * {
@@ -111,4 +139,13 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  background-color: #222;
 }

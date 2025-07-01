@@ -1,12 +1,4 @@
-/* style.css */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #f9f9f9;
-  color: #131313;
-}
-
+/* Responsibale on the draggable header and main navbar */
 #main-header {
   top: 0;
   display: flex;
@@ -58,21 +50,4 @@ body, html {
 .side-menu a {
   color: white;
   text-decoration: none;
-}
-
-.content {
-  padding: 1.8rem;
-}
-
-.content-rtl {
-  padding: 1.8rem;
-  direction: rtl;
-}
-
-/* Footer */
-footer {
-  bottom: 0;
-  height: 25px;
-  text-align: center;
-  background-color: #3452e4c4;
 }
