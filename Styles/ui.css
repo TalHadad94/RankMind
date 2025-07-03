@@ -13,6 +13,7 @@
 
 #logo {
   display: flex;
+  align-items: center;
 }
 
 #logo img {
@@ -23,6 +24,12 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+#logo-link {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
 }
 
 .burger-icon {
