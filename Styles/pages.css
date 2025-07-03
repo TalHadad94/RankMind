@@ -1,8 +1,8 @@
 /* pages.css - shared page styles & animations */
 :root {
   --brand-bg: #f9f9fc;
-  --brand-primary: #3452e4;
-  --brand-secondary: #6e84e6;
+  --brand-primary: #222;
+  --brand-secondary: #187f88;
   --brand-accent: #f04e98;
   --brand-text: #1a1a1a;
   --brand-muted: #808080;
@@ -145,15 +145,6 @@ a {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Footer */
-footer {
-  bottom: 0;
-  height: 25px;
-  color: #fff;
-  text-align: center;
-  background-color: #222;
 }
 
 /* SVG Divider Styles */
