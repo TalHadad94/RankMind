@@ -11,7 +11,16 @@
   z-index: 1000;
 }
 
-.logo {
+#logo {
+  display: flex;
+}
+
+#logo img {
+  height: 2.1em; /* Slightly larger than the text (1.6x font size) */
+  margin-right: 0.4em;
+}
+
+.logo-text {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -27,7 +36,7 @@
   right: -250px; /* change to left: -250px for Hebrew */
   width: 125px;
   height: 100%;
-  background-color: #333;
+  background-color: #262626;
   color: white;
   transition: right 0.3s ease;
   padding-top: 60px;
