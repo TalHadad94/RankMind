@@ -1,30 +1,22 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Full-screen layout */
 body {
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #6a11cb 40%, #2575fc 60%); /* A nice gradient background */
     color: white;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Prevent scrollbars if elements animate out of view */
 }
 
 /* Top Logo */
 .top-logo {
-    position: absolute;
     width: 100%;
-    padding: 20px 0;
-    margin-top: 30px;
+    padding: 20px 0px;
+    margin-top: 50px; /* Keep this for initial spacing from the top */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px; /* Adjust this value as needed for spacing */
 }
 
 .top-logo img {
@@ -42,6 +34,9 @@ body {
     align-items: center;
     text-align: center;
     animation: fadeIn 1.2s ease-in-out;
+    /* Add padding-top to ensure content doesn't start too high */
+    /* This padding will create space between the logo and the text below it */
+    padding-top: 0px; /* Adjust this value as needed for more space */
 }
 
 .logo {
