@@ -1,0 +1,93 @@
+.contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Contact Us Button */
+.index-button {
+    padding: 12px 24px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #00d5ff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
+    position: relative; /* Needed for z-index */
+    z-index: 2; /* Ensure it's above the sub-buttons when they appear */
+}
+
+.index-button:hover {
+    background-color: rgba(0, 255, 231, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 14px rgba(0, 255, 231, 0.6);
+}
+
+/* Sub-buttons container */
+.sub-buttons-container {
+    position: absolute;
+    top: 100%; /* Position below the main button */
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+    gap: 15px; /* Space between sub-buttons */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px); /* Start slightly above and move down */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1; /* Below the main button */
+    padding-top: 10px; /* Space between main button and sub-buttons */
+}
+
+.sub-buttons-container.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Sub-buttons styling */
+.sub-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make them circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: transparent;
+    border: 2px solid; /* Border will be set by specific classes */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none; /* Remove underline for links */
+}
+
+.sub-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific styles for Call button */
+.sub-button.call {
+    border-color: #00d5ff; /* Green for call */
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+}
+.sub-button.call:hover {
+    background-color: rgba(40, 167, 69, 0.1);
+    box-shadow: 0 0 14px rgba(40, 167, 69, 0.6);
+}
+
+/* Specific styles for WhatsApp button */
+.sub-button.whatsapp {
+    border-color: #00d5ff; /* WhatsApp green */
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.4);
+}
+.sub-button.whatsapp:hover {
+    background-color: rgba(37, 211, 102, 0.1);
+    box-shadow: 0 0 14px rgba(37, 211, 102, 0.6);
+}

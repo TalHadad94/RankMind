@@ -9,10 +9,11 @@
 body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(160deg, #bf5ce3, #665696, #31599f);
+    background: linear-gradient(135deg, #6a11cb 40%, #2575fc 60%); /* A nice gradient background */
     color: white;
     display: flex;
     flex-direction: column;
+    overflow: hidden; /* Prevent scrollbars if elements animate out of view */
 }
 
 /* Top Logo */
@@ -60,26 +61,6 @@ body {
     font-size: 1.2rem;
     opacity: 0.85;
     margin-bottom: 2rem;
-}
-
-/* Profile Button */
-.index-button {
-    padding: 12px 24px;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #fff;
-    background: transparent;
-    border: 2px solid #00d5ff;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
-}
-
-.index-button:hover {
-    background-color: rgba(0, 255, 231, 0.1);
-    transform: scale(1.05);
-    box-shadow: 0 0 14px rgba(0, 255, 231, 0.6);
 }
 
 /* Footer */

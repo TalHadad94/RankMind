@@ -29,6 +29,9 @@
     <!-- Title and Styles -->
     <title>RankMind | Marketing & SEO Experts</title>
     <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/index_buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- This line imports the Font Awesome icon library -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- This line imports the Tailwind CSS framework -->
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
 </head>
 
@@ -44,13 +47,30 @@
     <button class="index-button" onclick="location.href='./Pages/English/about.html'">
       More Information
     </button>
-    <button class="index-button" onclick="location.href='https://wa.me/16193949827'">
-      Contact Us
-    </button>
+    <div class="contact-container">
+        <!-- Main Contact Us Button -->
+        <button class="index-button" id="mainContactButton">
+            Contact Us
+        </button>
+
+        <!-- Sub-buttons Container -->
+        <div class="sub-buttons-container" id="subButtonsContainer">
+            <!-- Call Button -->
+            <a href="tel:+16193949827" class="sub-button call" aria-label="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/16193949827" class="sub-button whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
   </div>
 
   <footer>
     <p class="footer-text">RankMind © 2025</p>
   </footer>
+
+  <script src="/Scripts/index.js"></script>
 </body>
 </html>
