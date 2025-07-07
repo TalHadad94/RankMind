@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* 'Inter' */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-body, html {
+html, body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Responsibale on the draggable header and main navbar */
+.highlight {
+  color: #00d5ff;
+  text-shadow: 0 0 8px #00ffe766;
+}
+
+/* Header */
 #main-header {
   top: 0;
   display: flex;
@@ -17,13 +24,14 @@ body, html {
   z-index: 1000;
 }
 
+/* Logo section */
 #logo {
   display: flex;
   align-items: center;
 }
 
 #logo img {
-  height: 2.1em; /* Slightly larger than the text (1.6x font size) */
+  height: 2.1em;
   margin-right: 0.4em;
 }
 
@@ -34,35 +42,38 @@ body, html {
 
 #logo-link {
   text-decoration: none;
-  display: inline-block;
   color: inherit;
+  display: inline-block;
 }
 
+/* Burger menu icon */
 .burger-icon {
   font-size: 1.8rem;
   cursor: pointer;
 }
 
+/* Mobile side menu (off-canvas) */
 .side-menu {
   position: fixed;
   top: 0;
-  right: -250px; /* change to left: -250px for Hebrew */
+  right: -250px; /* change to left: -250px for RTL/Hebrew */
   width: 125px;
   height: 100%;
   background-color: #262626;
   color: white;
   transition: right 0.3s ease;
-  padding-top: 60px;
-  z-index: 999;
+  padding-top: 70px;
+  z-index: 800;
 }
 
 .side-menu.open {
-  right: 0; /* change to left: 0 for Hebrew */
+  right: 0; /* change to left: 0 for RTL/Hebrew */
 }
 
 .side-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .side-menu li {
@@ -74,7 +85,52 @@ body, html {
   text-decoration: none;
 }
 
-.highlight {
-    color: #00d5ff;
-    text-shadow: 0 0 8px #00ffe766;
+/* Responsive classes */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Desktop navigation styles */
+@media (min-width: 768px) {
+  /* Hide mobile-only items on large screens */
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  #desktop-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  #desktop-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #desktop-nav li {
+    padding: 0;
+  }
+
+  #desktop-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  #desktop-nav a:hover {
+    color: #00eaff;
+  }
 }

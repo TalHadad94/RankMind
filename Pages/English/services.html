@@ -37,13 +37,26 @@
         <div class="logo-text">Rank<span class="highlight">Mind</span></div>
       </div>
     </a>
-    <div class="burger-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Desktop Navigation (inside header) -->
+    <nav id="desktop-nav" class="desktop-only">
+      <ul>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Burger icon stays in header -->
+    <div class="burger-icon mobile-only" onclick="toggleMenu()">☰</div>
   </header>
 
-  <nav id="side-menu" class="side-menu">
+  <!-- Mobile Navigation (outside header) -->
+  <nav id="main-nav" class="side-menu mobile-only">
     <ul>
       <li><a href="./about.html">About</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="./services.html">Services</a></li>
       <li><a href="./pricing.html">Pricing</a></li>
       <li><a href="./contact.html">Contact</a></li>
     </ul>

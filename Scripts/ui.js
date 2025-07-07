@@ -1,6 +1,7 @@
 // Toggle menu on/off
 function toggleMenu() {
-  document.getElementById('side-menu').classList.toggle('open');
+  const menu = document.getElementById('main-nav');
+  menu.classList.toggle('open');
 }
 
 // Fading effect
