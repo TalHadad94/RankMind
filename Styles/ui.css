@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* 'Inter' */
+
+body, html {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Responsibale on the draggable header and main navbar */
 #main-header {
   top: 0;
@@ -66,4 +72,9 @@
 .side-menu a {
   color: white;
   text-decoration: none;
+}
+
+.highlight {
+    color: #00d5ff;
+    text-shadow: 0 0 8px #00ffe766;
 }

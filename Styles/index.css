@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* 'Inter' */
+
 /* Full-screen layout */
 body {
     min-height: 100vh; /* Changed from height to min-height */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #6a11cb 40%, #2575fc 60%); /* A nice gradient background */
     color: white;
     display: flex;
