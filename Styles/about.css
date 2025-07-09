@@ -218,3 +218,37 @@
   background-color: #ccc;
   z-index: 0;
 }
+
+.cta-section {
+  background: linear-gradient(135deg, #00d5ff, #0077cc);
+  color: white;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #0077cc;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f0f0f0;
+  color: #005c99;
+}
