@@ -99,7 +99,6 @@
 
 .why-choose-us {
   padding: 4rem 1.5rem;
-  background-color: #ffffff;
   text-align: center;
 }
 
@@ -150,7 +149,7 @@
 
 .our-process {
   padding: 4rem 1.5rem;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -251,4 +250,27 @@
 .cta-button:hover {
   background-color: #f0f0f0;
   color: #005c99;
+}
+
+.intro-summary {
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.intro-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00d5ff;
+}
+
+.intro-summary p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
 }
