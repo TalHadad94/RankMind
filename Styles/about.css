@@ -151,6 +151,7 @@
   padding: 4rem 1.5rem;
   background-color: #ffffff;
   text-align: center;
+  border-radius: 10px;
 }
 
 .our-process h2 {
@@ -219,10 +220,12 @@
 }
 
 .cta-section {
-  background: linear-gradient(135deg, #00d5ff, #0077cc);
+  background: linear-gradient(135deg, #121212, #1f1f1f);
   color: white;
   padding: 4rem 1.5rem;
   text-align: center;
+  border-top: 1px solid #333;
+  border-radius: 10px;
 }
 
 .cta-content h2 {
@@ -234,28 +237,31 @@
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  color: #ccc;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #fff;
-  color: #0077cc;
+  background-color: #00d5ff;
+  color: #000;
   font-weight: bold;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
+  box-shadow: 0 0 10px #00d5ff66;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #f0f0f0;
-  color: #005c99;
+  background-color: #00aacc;
+  color: white;
 }
 
 .intro-summary {
   padding: 4rem 1.5rem;
   background-color: #ffffff;
   text-align: center;
+  border-radius: 10px;
 }
 
 .intro-inner {
