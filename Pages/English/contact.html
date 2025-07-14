@@ -73,38 +73,72 @@
   <main class="content">
     <h1>Let's Talk</h1>
     <p>Have a website already? Want a full business launch? Contact us for a no-strings-attached consultation — we'll show you where you're missing traffic and how to fix it.</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="How can we help you?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
 
-    <section class="section contact">
-      <h1>Contact Us</h1>
-      <p>Let's help your business get discovered — by Google, ChatGPT, and your local customers.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="How can we help you?"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="form-status" style="margin-top: 1rem;"></p>
+      </div>
 
-      <ul class="contact-info">
-        <li><strong>Email:</strong> <a href="mailto:contact@rankmind.net">contact@rankmind.net</a></li>
-        <li><strong>Website:</strong> <a href="https://rankmind.net">www.rankmind.net</a></li>
-        <li><strong>Location:</strong> Phoenix, USA</li>
-      </ul>
+      <div class="contact-card">
+        <section class="section contact">
+          <h1>Contact Us</h1>
+          <p>Let's help your business get discovered — by Google, ChatGPT, and your local customers.</p>
+          <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:contact@rankmind.net">contact@rankmind.net</a></li>
+            <li><strong>Website:</strong> <a href="https://rankmind.net">www.rankmind.net</a></li>
+            <li><strong>Location:</strong> Phoenix, USA</li>
+          </ul>
+          <h2>Free Consultation</h2>
+        </section>
+      </div>
+    </div>
 
-      <h2>Free Consultation</h2>
-    </section>
   </main>
 
-  <footer class="footer scroll-fade">
+<footer class="footer scroll-fade">
     <div class="footer-inner">
-      <p>&copy; 2025 RankMind</p>
-      <p class="footer-links">
-        <a href="/Pages/English/privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
-        <a href="/Pages/English/terms.html" target="_blank" rel="noopener noreferrer">Terms of Use</a> |
-        <a href="/Pages/English/accessibility.html" target="_blank" rel="noopener noreferrer">Accessibility</a>
-      </p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>RankMind</h4>
+          <p>Clean code. Clear SEO. True visibility.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Pages/English/about.html">About</a></li>
+            <li><a href="/Pages/English/services.html">Services</a></li>
+            <li><a href="/Pages/English/pricing.html">Pricing</a></li>
+            <li><a href="/Pages/English/contact.html">Contact</a></li>
+            <li><a href="/Pages/English/blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/Pages/English/privacy.html">Privacy Policy</a></li>
+            <li><a href="/Pages/English/terms.html">Terms of Use</a></li>
+            <li><a href="/Pages/English/accessibility.html">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2025 RankMind — All rights reserved.</p>
     </div>
   </footer>
 
   <script src="../../Scripts/ui.js"></script>
+  <script src="../../Scripts/contact.js"></script>
 </body>
 </html>

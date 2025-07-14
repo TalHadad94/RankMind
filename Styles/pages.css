@@ -114,6 +114,51 @@
   box-shadow: 0 5px 10px rgba(52, 82, 228, 0.3);
 }
 
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-grid .contact-form {
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+.contact-grid .contact {
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+/* Optional spacing for inner elements */
+.contact ul {
+  padding-left: 1.2rem;
+}
+
+.contact-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  flex: 1 1 320px;
+  max-width: 480px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-card h1,
+.contact-card h2,
+.contact-card p,
+.contact-card ul {
+  margin-top: 0;
+}
+
 /* Responsive Tweaks */
 @media (max-width: 768px) {
   .pricing-boxes {
