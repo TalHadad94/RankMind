@@ -62,7 +62,7 @@
 .how-we-work h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: #111;
+  color: var(--brand-white);
 }
 
 .features-grid {
@@ -105,7 +105,7 @@
 .why-choose-us h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-  color: #111;
+  color: var(--brand-white);
 }
 
 .benefits-grid {
@@ -259,7 +259,7 @@
 
 .intro-summary {
   padding: 4rem 1.5rem;
-  background-color: #ffffff;
+  background-color: var(--brand-card);
   text-align: center;
   border-radius: 10px;
 }
