@@ -12,6 +12,11 @@
   }
 }
 
+.page-title {
+  color: var(--brand-white);
+  text-align: center;
+}
+
 .content {
   padding: 1.8rem;
 }
@@ -30,6 +35,61 @@
 .content > *:nth-child(2) { animation-delay: 0.2s; }
 .content > *:nth-child(3) { animation-delay: 0.3s; }
 .content > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* === Service Section Box Layout === */
+.service-section {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  gap: 1.5rem;
+  animation: fadeSlideUp 0.6s ease forwards;
+}
+
+.service-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.service-section .service-list {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+/* === Animation Container (right side on desktop) === */
+.service-animation {
+  display: none;
+  text-align: center;
+}
+
+.service-animation img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
+/* === Layout for Larger Screens === */
+@media (min-width: 900px) {
+  .service-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service-text {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .service-animation {
+    display: block;
+    flex-shrink: 0;
+  }
+}
 
 /* Services List Animation */
 .service-list li {
@@ -75,6 +135,44 @@
   font-size: 2rem;
   color: #3452e4;
   margin: 0.5rem 0;
+}
+
+/* === Detailed Pricing Sections as Cards === */
+.pricing-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.pricing-tier {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  animation: fadeSlideUp 0.6s ease forwards;
+}
+
+.pricing-tier h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.pricing-tier ul {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.pricing-tier p:last-child {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* Contact Form */
