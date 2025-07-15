@@ -4,6 +4,8 @@ const status = document.getElementById("form-status");
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    status.textContent = "Sending...";
+    status.style.color = "gray";
 
     const name = form.name.value.trim();
     const email = form.email.value.trim();
@@ -11,6 +13,13 @@ form.addEventListener("submit", async (e) => {
 
     if (!name || !email) {
     status.textContent = "Please provide your name and email.";
+    status.style.color = "red";
+    return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+    status.textContent = "Please enter a valid email address.";
     status.style.color = "red";
     return;
     }
