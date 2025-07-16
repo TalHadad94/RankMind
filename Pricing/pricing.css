@@ -1,0 +1,63 @@
+.pricing-comparison {
+  margin-top: 4rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.comparison-table thead th {
+  background: #f9f9f9;
+  font-size: 1rem;
+  padding: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+
+.comparison-table td {
+  padding: 0.8rem 0.5rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+.price-tag {
+  display: block;
+  font-weight: bold;
+  color: #3452e4;
+  font-size: 1.1rem;
+  margin-top: 0.3rem;
+}
+
+.choose-plan {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-top: 0.3rem;
+  background-color: #3452e4;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+.choose-plan:hover {
+  background-color: #2b45cc;
+}
+
+.compare-note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  text-align: center;
+}

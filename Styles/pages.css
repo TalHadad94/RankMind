@@ -175,6 +175,34 @@
   }
 }
 
+.feature-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+  text-align: left;
+}
+.feature-checklist li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.choose-plan {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #3452e4;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.choose-plan:hover {
+  background-color: #2b45cc;
+}
+
 /* Contact Form */
 .contact-form {
   display: flex;
