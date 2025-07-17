@@ -181,18 +181,23 @@ a {
 }
 
 .fab-options {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  gap: 0.8rem;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   bottom: 70px;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 .fab-options.show {
-  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .fab-icon {
