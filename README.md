@@ -41,20 +41,21 @@ We help you become the **answer**, not just a search result.
 
 ## 📂 Repository Structure
 
+```
 RankMind/
-├── Contact/ # Contact form HTML + CSS
-├── Images/ # Static assets, photos, backgrounds
-├── Legal/ # Privacy, Terms, Accessibility pages
-├── Pricing/ # Pricing plans and styling
-├── Scripts/ # JS modules (forms, toggles, UI)
-├── Services/ # Our offered services and designs
-├── Styles/ # Shared and page-specific CSS files
-├── CNAME # GitHub Pages domain setup
-├── LICENSE # Open source license
-├── README.md # This file
-├── index.html # Homepage
-└── robot.txt # SEO crawling rules
-
+├── Contact/       # Contact form HTML + CSS
+├── Images/        # Static assets, photos, backgrounds
+├── Legal/         # Privacy, Terms, Accessibility pages
+├── Pricing/       # Pricing plans and styling
+├── Scripts/       # JS modules (forms, toggles, UI)
+├── Services/      # Our offered services and designs
+├── Styles/        # Shared and page-specific CSS files
+├── CNAME          # GitHub Pages domain setup
+├── LICENSE        # Open source license
+├── README.md      # This file
+├── index.html     # Homepage
+└── robot.txt      # SEO crawling rules
+```
 
 > 🛠️ Each section typically includes one `.html` and one `.css` file  
 > The structure is flat, fast, and GitHub Pages-ready
