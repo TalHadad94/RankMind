@@ -18,3 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fadeEls.forEach(el => observer.observe(el));
 });
+
+// Floating buttons
+const fabToggle = document.getElementById("fabToggle");
+const fabOptions = document.getElementById("fabOptions");
+
+fabToggle.addEventListener("click", () => {
+  fabOptions.classList.toggle("show");
+});
