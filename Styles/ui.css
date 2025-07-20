@@ -176,9 +176,7 @@ a {
   transition: background-color 0.2s ease;
 }
 
-.fab-main:hover {
-  background-color: #3452e4;
-}
+
 
 .fab-options {
   opacity: 0;

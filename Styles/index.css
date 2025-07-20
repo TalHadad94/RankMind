@@ -144,6 +144,13 @@
   margin-bottom: 1rem;
 }
 
+.benefit-item .icon img {
+  width: 4rem;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .benefit-item h3 {
   font-size: 1.2rem;
   color: #00d5ff;
