@@ -164,7 +164,7 @@ a {
 }
 
 .fab-main {
-  background-color: #3452e4;
+  background-color: var(--brand-secondary);
   color: white;
   font-size: 1.4rem;
   width: 56px;
@@ -177,7 +177,7 @@ a {
 }
 
 .fab-main:hover {
-  background-color: #2b45cc;
+  background-color: #3452e4;
 }
 
 .fab-options {
