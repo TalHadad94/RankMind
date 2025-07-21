@@ -165,18 +165,17 @@ a {
 
 .fab-main {
   background-color: var(--brand-secondary);
-  color: white;
-  font-size: 1.4rem;
   width: 56px;
   height: 56px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: background-color 0.2s ease;
 }
 
-
+.fab-main img{
+  width: 2.1rem;
+  height: auto;
+}
 
 .fab-options {
   opacity: 0;
