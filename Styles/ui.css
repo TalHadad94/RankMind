@@ -94,7 +94,21 @@ a {
 
 .side-menu li {
   padding: 1rem;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
 }
+
+.side-menu.open li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.side-menu.open li:nth-child(1) { transition-delay: 0.1s; }
+.side-menu.open li:nth-child(2) { transition-delay: 0.2s; }
+.side-menu.open li:nth-child(3) { transition-delay: 0.3s; }
+.side-menu.open li:nth-child(4) { transition-delay: 0.4s; }
+
 
 .side-menu a {
   color: white;
