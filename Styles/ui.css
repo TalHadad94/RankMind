@@ -64,8 +64,50 @@ a {
 
 /* Burger menu icon */
 .burger-icon {
-  font-size: 1.8rem;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 22px;
   cursor: pointer;
+  z-index: 1001;
+}
+
+.burger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-icon span:nth-child(1) {
+  top: 0;
+}
+
+.burger-icon span:nth-child(2) {
+  top: 9px;
+}
+
+.burger-icon span:nth-child(3) {
+  top: 18px;
+}
+
+/* Animation to X */
+.burger-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.burger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
 }
 
 /* Mobile side menu (off-canvas) */

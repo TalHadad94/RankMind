@@ -1,7 +1,10 @@
 // Toggle menu on/off
 function toggleMenu() {
   const menu = document.getElementById('main-nav');
+  const burger = document.querySelector('.burger-icon');
   menu.classList.toggle('open');
+  document.body.classList.toggle('menu-open');
+  burger.classList.toggle('open');
 }
 
 // Fading effect
