@@ -1,6 +1,9 @@
 /* --- Layout and Typography --- */
 .services-content {
-  padding: 2rem 1rem;
+    padding: 2rem 1rem;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 .group-title {
@@ -39,18 +42,92 @@
   border-left: 4px solid #00d5ff;
   border-radius: 0 0 12px 12px;
   transition: max-height 0.4s ease, padding 0.3s ease;
+  margin-bottom: 2.5rem;
 }
 
 .service-detail.active {
   padding: 1rem 2rem;
-  max-height: 500px; /* enough height for most lists */
+  max-height: 2000px; /* enough height for most lists */
 }
 
 .service-detail ul {
-  padding-left: 1.2rem;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
 .service-detail li {
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: start;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #333;
+}
+
+.service-detail li::before {
+  content: "✔️";
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  color: #00d5ff;
+  line-height: 1.5;
+}
+
+/* === Chevron for Service Card Toggle === */
+.service-card {
+  position: relative;
+}
+
+.service-card::after {
+  content: "›";
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.4rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.service-detail.active ~ .service-card::after,
+.service-card.active::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* === Bullet Expandables === */
+.service-bullet {
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.bullet-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.bullet-icon {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.bullet-detail {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-top: 0;
+  color: #555;
+  transition: max-height 0.4s ease, padding-top 0.2s ease;
+}
+
+.service-bullet.active .bullet-detail {
+  max-height: 300px;
+  padding-top: 0.5rem;
+}
+
+.service-bullet.active .bullet-icon {
+  transform: rotate(90deg);
 }
