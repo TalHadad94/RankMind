@@ -1,0 +1,56 @@
+/* --- Layout and Typography --- */
+.services-content {
+  padding: 2rem 1rem;
+}
+
+.group-title {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #00d5ff;
+}
+
+/* --- Card Appearance --- */
+.service-card {
+  background: white;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  background: #f5faff;
+  transform: scale(1.01);
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* --- Details Hidden by Default --- */
+.service-detail {
+  max-height: 0;
+  overflow: hidden;
+  background: #fafafa;
+  padding: 0 2rem;
+  border-left: 4px solid #00d5ff;
+  border-radius: 0 0 12px 12px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.service-detail.active {
+  padding: 1rem 2rem;
+  max-height: 500px; /* enough height for most lists */
+}
+
+.service-detail ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.service-detail li {
+  margin-bottom: 0.5rem;
+}
