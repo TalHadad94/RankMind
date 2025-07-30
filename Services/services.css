@@ -8,8 +8,14 @@
 
 .group-title {
   font-size: 1.8rem;
-  margin: 2rem 0 1rem;
+  margin: 4rem 0 1rem;
   color: #00d5ff;
+  text-align: center;
+}
+
+.group-title img {
+  background-color: var(--brand-primary);
+  border-radius: 50%;
 }
 
 /* --- Card Appearance --- */
