@@ -59,7 +59,7 @@
 }
 .price {
   font-size: 2rem;
-  color: #3452e4;
+  color: var(--brand-secondary);
   margin: 0.5rem 0;
 }
 
@@ -147,23 +147,23 @@
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #3452e4;
-  box-shadow: 0 0 5px #3452e4a4;
+  border-color: var(--brand-secondary);
+  box-shadow: 0 0 5px black;
   outline: none;
 }
 .contact-form button {
-  background: #3452e4;
-  color: white;
+  background: var(--brand-secondary);
+  color: black;
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
   font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.2s ease;
 }
 .contact-form button:hover {
-  background: #223ad4;
-  box-shadow: 0 5px 10px rgba(52, 82, 228, 0.3);
+  color: white;
 }
 
 .contact-grid {
@@ -247,4 +247,21 @@
 .scroll-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #00d5ff;
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00d5ff66;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00aacc;
+  color: white;
 }

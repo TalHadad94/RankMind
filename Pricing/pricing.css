@@ -35,25 +35,9 @@
 .price-tag {
   display: block;
   font-weight: bold;
-  color: #3452e4;
+  color: var(--brand-secondary);
   font-size: 1.1rem;
   margin-top: 0.3rem;
-}
-
-.choose-plan {
-  display: inline-block;
-  padding: 0.4rem 1rem;
-  margin-top: 0.3rem;
-  background-color: #3452e4;
-  color: white;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background-color 0.2s ease;
-}
-.choose-plan:hover {
-  background-color: #2b45cc;
 }
 
 .compare-note {
