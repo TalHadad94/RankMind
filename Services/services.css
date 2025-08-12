@@ -20,7 +20,7 @@
 
 /* --- Card Appearance --- */
 .service-card {
-  background: white;
+  background: var(--brand-card);
   padding: 1.5rem 2rem;
   margin: 1rem 0;
   border-radius: 12px;
@@ -30,7 +30,6 @@
 }
 
 .service-card:hover {
-  background: #f5faff;
   transform: scale(1.01);
 }
 
@@ -43,7 +42,7 @@
 .service-detail {
   max-height: 0;
   overflow: hidden;
-  background: #fafafa;
+  background: var(--brand-card);
   padding: 0 2rem;
   border-left: 4px solid #00d5ff;
   border-radius: 0 0 12px 12px;

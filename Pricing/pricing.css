@@ -1,6 +1,6 @@
 .pricing-comparison {
   margin-top: 4rem;
-  background: white;
+  background: var(--brand-card);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
@@ -14,7 +14,6 @@
 }
 
 .comparison-table thead th {
-  background: #f9f9f9;
   font-size: 1rem;
   padding: 1rem;
   border-bottom: 2px solid #ddd;
