@@ -52,6 +52,30 @@
   color: #ccc;
 }
 
+.intro-summary {
+  padding: 4rem 1.5rem;
+  background-color: var(--brand-card);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.intro-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #00d5ff;
+}
+
+.intro-summary p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
 .how-we-work {
   padding: 4rem 1.5rem;
   text-align: center;
@@ -165,6 +189,33 @@
   color: #111;
 }
 
+
+
+
+
+
+.about-us {
+  padding: 4rem 1.5rem;
+  background-color: var(--brand-card);
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.about-us h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #00d5ff;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
 .process-steps {
   max-width: 800px;
   margin: 0 auto;
@@ -243,28 +294,4 @@
   margin-bottom: 1.5rem;
   font-weight: 500;
   color: #ccc;
-}
-
-.intro-summary {
-  padding: 4rem 1.5rem;
-  background-color: var(--brand-card);
-  text-align: center;
-  border-radius: 10px;
-}
-
-.intro-inner {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.intro-summary h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #00d5ff;
-}
-
-.intro-summary p {
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.6;
 }
