@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,15 +43,20 @@
     <!-- Desktop Navigation (inside header) -->
     <nav id="desktop-nav" class="desktop-only">
       <ul>
-      <li><a href="./" class="highlight">About</a></li>
-      <li><a href="./Services/">Services</a></li>
-      <li><a href="./Pricing/">Pricing</a></li>
-      <li><a href="./Contact/">Contact</a></li>
+        <li><a href="./" class="highlight">About</a></li>
+        <li><a href="./Services/">Services</a></li>
+        <li><a href="./Pricing/">Pricing</a></li>
+        <li><a href="./Contact/">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Invisible spacer balances the logo -->
-    <div class="header-spacer desktop-only"></div>
+    <!-- Right-side: language toggle (keeps nav centered) -->
+    <div class="header-spacer desktop-only">
+      <a href="#" class="lang-toggle" aria-label="Switch language">
+        <img src="./Assets/globe.svg" alt="">
+        <span>EN</span>
+      </a>
+    </div>
 
     <!-- Burger icon stays in header -->
     <div class="burger-icon mobile-only" onclick="toggleMenu()">
@@ -67,6 +73,14 @@
       <li><a href="./Services/">Services</a></li>
       <li><a href="./Pricing/">Pricing</a></li>
       <li><a href="./Contact/">Contact</a></li>
+
+      <!-- Language toggle (Mobile: right after Contact) -->
+      <li>
+        <a href="#" class="lang-toggle" aria-label="Switch language">
+          <img src="./Assets/globe.svg" alt="" style="width:18px;height:18px;vertical-align:middle;margin-right:8px;">
+          <span>EN</span>
+        </a>
+      </li>
     </ul>
   </nav>
 
