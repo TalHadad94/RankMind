@@ -303,3 +303,22 @@ html[lang="he"] footer {
   direction: rtl;
   text-align: right;
 }
+
+/* =========================
+   Hebrew (RTL) - Fix side-menu text only
+   Do NOT change animation/positions
+   ========================= */
+
+/* Keep the menu animation behaving like EN (LTR positioning logic) */
+html[dir="rtl"] #main-nav.side-menu {
+  direction: ltr;
+}
+
+/* =========================================================
+   Hebrew side-menu: keep animation, but align text LEFT inside the cards
+   ========================================================= */
+html[lang="he"] #main-nav.side-menu li,
+html[lang="he"] #main-nav.side-menu li a {
+  text-align: left !important;
+}
+
