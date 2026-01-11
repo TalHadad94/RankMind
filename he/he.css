@@ -1,0 +1,68 @@
+/* =========================================================
+   he.css — Hebrew-only overrides (loaded AFTER global CSS)
+   Scope: only language / RTL behavior adjustments
+   ========================================================= */
+
+/* =========================================================
+   1) Direction & alignment rules for Hebrew pages
+   ========================================================= */
+html[lang="he"] #main-header {
+  /* Keep header structure LTR even on Hebrew pages */
+  direction: ltr;
+}
+
+html[lang="he"] #desktop-nav,
+html[lang="he"] #main-nav,
+html[lang="he"] main {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Keep the side-menu animation behaving like EN (LTR positioning logic) */
+html[dir="rtl"] #main-nav.side-menu {
+  direction: ltr;
+}
+
+/* Hebrew side-menu: keep animation, but align text LEFT inside the cards */
+html[lang="he"] #main-nav.side-menu li,
+html[lang="he"] #main-nav.side-menu li a {
+  text-align: left !important;
+}
+
+/* =========================================================
+   2) Hebrew fix: "Our Process" (vertical line + number alignment)
+   ========================================================= */
+
+/* Move the vertical line from LEFT to RIGHT on Hebrew pages */
+html[lang="he"] .process-steps::before {
+  left: auto;
+  right: 18px; /* mirrors the original left: 18px */
+}
+
+/*
+  IMPORTANT:
+  The page main is RTL, which can affect flex layout logic.
+  Force the row layout context to LTR, then use row-reverse to put the circle on the right.
+*/
+html[lang="he"] .process-step {
+  direction: ltr;            /* layout math stays consistent */
+  flex-direction: row-reverse; /* circle on the RIGHT, content on the LEFT */
+}
+
+/* Ensure the circle spacing is correct when it sits on the right */
+html[lang="he"] .process-step .step-number {
+  margin-right: 0 !important;
+  margin-left: 20px !important; /* creates space between circle and text */
+}
+
+/* Keep the content itself RTL */
+html[lang="he"] .step-content {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Defensive: headings and paragraph alignment */
+html[lang="he"] .step-content h3,
+html[lang="he"] .step-content p {
+  text-align: right;
+}

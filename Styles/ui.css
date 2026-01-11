@@ -287,38 +287,3 @@ a {
 }
 
 .fab-icon:hover { transform: scale(1.1); }
-
-/* =========================================================
-   10) Internationalization helpers
-   - Keep header structure LTR even on Hebrew pages
-   - Allow content to be RTL
-   ========================================================= */
-html[lang="he"] #main-header { direction: ltr; }
-
-html[lang="he"] #desktop-nav,
-html[lang="he"] #main-nav,
-html[lang="he"] .hero-content,
-html[lang="he"] main,
-html[lang="he"] footer {
-  direction: rtl;
-  text-align: right;
-}
-
-/* =========================
-   Hebrew (RTL) - Fix side-menu text only
-   Do NOT change animation/positions
-   ========================= */
-
-/* Keep the menu animation behaving like EN (LTR positioning logic) */
-html[dir="rtl"] #main-nav.side-menu {
-  direction: ltr;
-}
-
-/* =========================================================
-   Hebrew side-menu: keep animation, but align text LEFT inside the cards
-   ========================================================= */
-html[lang="he"] #main-nav.side-menu li,
-html[lang="he"] #main-nav.side-menu li a {
-  text-align: left !important;
-}
-
