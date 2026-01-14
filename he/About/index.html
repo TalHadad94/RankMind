@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>אודות טל חדד | RankMind</title>
+  <meta name="description" content="הכירו את טל חדד, מייסד RankMind. מהנדס תוכנה שהפך למומחה קידום ביצועים, SEO ו-AEO עם מיקוד בשיחות והמרות." />
+
+  <!-- Canonical (עדכן לכתובת האמיתית) -->
+  <link rel="canonical" href="https://rankmind.example/he/about-tal" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="אודות טל חדד | RankMind" />
+  <meta property="og:description" content="מהנדס תוכנה שהפך למומחה SEO ו-AEO ממוקד תוצאות אמיתיות: שיחות והמרות." />
+  <meta property="og:url" content="https://rankmind.example/he/about-tal" />
+  <meta property="og:site_name" content="RankMind" />
+  <!-- אופציונלי: תמונת OG -->
+  <!-- <meta property="og:image" content="https://rankmind.example/assets/og/about-tal-he.jpg" /> -->
+
+  <!-- Styles: אם יש לכם CSS גלובלי באתר – אפשר לחבר כאן -->
+  <!-- <link rel="stylesheet" href="/assets/css/main.css" /> -->
+  <!-- <link rel="stylesheet" href="/assets/css/ui.css" /> -->
+  <!-- <link rel="stylesheet" href="/assets/css/he.css" /> -->
+
+  <style>
+    :root {
+      --bg: #0b0b0e;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --line: rgba(255,255,255,0.12);
+      --accent: #00d5ff;
+      --accent2: #7c5cff;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Heebo", "Rubik", "Assistant", "Segoe UI", Arial, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { opacity: 0.92; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(11,11,14,0.7);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      gap: 16px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+    }
+    .brand-mark {
+      width: 12px; height: 12px; border-radius: 4px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 6px rgba(0,213,255,0.10);
+    }
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .navlinks a {
+      padding: 8px 10px;
+      border-radius: 12px;
+    }
+    .navlinks a:hover {
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      font-size: 14px;
+      border: 1px solid rgba(0,213,255,0.35);
+      background: linear-gradient(135deg, rgba(0,213,255,0.16), rgba(124,92,255,0.10));
+      box-shadow: 0 0 0 6px rgba(0,213,255,0.06);
+      white-space: nowrap;
+    }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 22px 18px 64px; }
+
+    .hero {
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background:
+        radial-gradient(900px 420px at 15% 10%, rgba(0,213,255,0.18), transparent 55%),
+        radial-gradient(700px 360px at 85% 20%, rgba(124,92,255,0.16), transparent 55%),
+        rgba(255,255,255,0.03);
+    }
+    .hero-inner { padding: 28px 22px; }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.05);
+      color: var(--muted);
+      font-weight: 900;
+      font-size: 13px;
+    }
+    h1 { margin: 14px 0 10px; font-size: 34px; line-height: 1.15; }
+    .lead { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.85; max-width: 78ch; }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-weight: 900;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+    }
+    .btn.primary {
+      border-color: rgba(0,213,255,0.35);
+      background: linear-gradient(135deg, rgba(0,213,255,0.22), rgba(124,92,255,0.12));
+    }
+    .btn:hover { transform: translateY(-1px); transition: transform 120ms ease; }
+
+    .grid { display: grid; gap: 14px; margin-top: 14px; }
+    .two { grid-template-columns: 1.2fr 0.8fr; }
+    @media (max-width: 900px) { .two { grid-template-columns: 1fr; } }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.04);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+    }
+    .card h2 { margin: 0 0 10px; font-size: 20px; }
+    .card p { margin: 0 0 10px; color: var(--muted); line-height: 1.9; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .list {
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .list li {
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.04);
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .list strong { color: var(--text); }
+
+    .section-title {
+      margin: 22px 0 10px;
+      font-size: 18px;
+      color: var(--text);
+      font-weight: 900;
+      letter-spacing: 0.2px;
+    }
+
+    .quote {
+      border-right: 3px solid rgba(0,213,255,0.55);
+      padding-right: 14px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      line-height: 1.9;
+      font-style: italic;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 40px;
+      padding: 22px 18px;
+      color: var(--muted);
+    }
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .footer-links a { padding: 6px 10px; border-radius: 12px; border: 1px solid transparent; }
+    .footer-links a:hover { border-color: var(--line); background: rgba(255,255,255,0.04); }
+  </style>
+
+  <!-- JSON-LD: Person + Organization + WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "טל חדד",
+        "alternateName": "Tal Hadad",
+        "jobTitle": "מייסד",
+        "worksFor": { "@type": "Organization", "name": "RankMind" },
+        "description": "מהנדס תוכנה שהפך למומחה SEO ו-AEO ממוקד תוצאות: שיחות והמרות, עם שקיפות מלאה.",
+        "nationality": "Israeli",
+        "knowsAbout": ["SEO", "Google Ads", "AEO", "Answer Engine Optimization", "Technical SEO", "Content Strategy", "Local SEO"]
+      },
+      {
+        "@type": "Organization",
+        "name": "RankMind",
+        "description": "RankMind מקדמת עסקים עם SEO, פרסום בגוגל ו-AEO — מותאם גם לגוגל וגם למנועי תשובות מבוססי AI.",
+        "brand": { "@type": "Brand", "name": "RankMind" }
+      },
+      {
+        "@type": "WebPage",
+        "name": "אודות טל חדד | RankMind",
+        "inLanguage": "he",
+        "isPartOf": { "@type": "WebSite", "name": "RankMind" },
+        "about": { "@type": "Person", "name": "טל חדד" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="nav" role="navigation" aria-label="ניווט ראשי">
+      <a class="brand" href="/he/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>RankMind</span>
+      </a>
+
+      <nav class="navlinks" aria-label="קישורים ראשיים">
+        <a href="/he/services">שירותים</a>
+        <a href="/he/pricing">מחירים</a>
+        <a href="/he/">תיק עבודות</a>
+        <a href="/he/contact">צור קשר</a>
+        <a href="/About/" title="English">EN</a>
+      </nav>
+
+      <a class="cta" href="/he/contact">בוא נבנה תוכנית צמיחה</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="אודות טל חדד">
+      <div class="hero-inner">
+        <span class="kicker">סיפור המייסד • שיווק מבוסס תוצאות</span>
+        <h1>היי, אני טל חדד.</h1>
+        <p class="lead">
+          אני מהנדס תוכנה שהפך לאיש שיווק ביצועים. את RankMind בניתי סביב עיקרון אחד:
+          <strong>תוצאות אמיתיות — שיחות והמרות — עם 100% שקיפות.</strong>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="/he/contact">דברו עם RankMind</a>
+          <a class="btn" href="/he/services">לכל השירותים</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid two">
+      <section class="card" aria-label="הסיפור שלי">
+        <h2>מהנדסה להשפעה אמיתית בשטח</h2>
+
+        <p>
+          היי, קוראים לי <strong>טל חדד</strong>, אני בן 29, במקור מישראל.
+          מאז שאני זוכר את עצמי, מחשבים וטכנולוגיה היו חלק בלתי נפרד מהחיים שלי.
+          אהבתי להבין איך מערכות עובדות — אבל במשך שנים לא באמת ידעתי לאן לנתב את זה.
+        </p>
+
+        <p>
+          אחרי שסיימתי את הצבא, החלטתי ללכת על זה עד הסוף ולמדתי <strong>Software Engineering</strong>.
+          סיימתי בהצלחה, כולל <strong>תואר שני</strong>, והתחלתי לעבוד במשרד הייטק “קלאסי”.
+          על הנייר — הכול היה מושלם. בפועל — זה פשוט לא הרגיש נכון.
+        </p>
+
+        <p>
+          היה לי חשוב לעשות משהו <strong>עם משמעות</strong>, משהו שרואים בו תוצאה אמיתית —
+          לעצמי ולאנשים סביבי.
+          בשלב הזה התחלתי לעזור לבני משפחה בעסקים שלהם:
+          לבנות אתרים, לנהל פרסום בגוגל — גם ממומן וגם אורגני.
+          ופתאום קרה משהו.
+        </p>
+
+        <p class="quote">
+          ראיתי תוצאות בלייב בגוגל. ראיתי אתרים עולים למעלה. ראיתי שיחות נכנסות.
+          וקיבלתי פידבקים אמיתיים כמו: “הטלפון לא מפסיק לצלצל” ו“סוף סוף מגיעים לקוחות נכונים”.
+        </p>
+
+        <p>
+          שם הבנתי — <strong>זה זה</strong>.
+          עזבתי את מקום העבודה שלי והחלטתי ללמוד את עולם הפרסום והקידום ברמה הכי גבוהה שיש,
+          מתוך אמונה אמיתית שפרסום הוא <strong>הליבה של כל עסק</strong>:
+          אם אין חשיפה — אין שיחות. אם אין שיחות — אין עסק.
+        </p>
+
+        <p>
+          וכשאפשר גם להתפרנס מזה ולעזור לעוד ועוד בעלי עסקים — אז בכלל.
+          ככה נולד הרעיון של <strong>RankMind</strong>.
+        </p>
+      </section>
+
+      <aside class="card" aria-label="מה RankMind מייצגת">
+        <h2>מה RankMind מייצגת</h2>
+
+        <ul class="list">
+          <li><strong>100% שקיפות:</strong> אתם יודעים בדיוק מה עושים, למה עושים, ומה יוצא מזה.</li>
+          <li><strong>רק תוצאות אמיתיות:</strong> היעד הוא שיחות והמרות — לא “מדדים יפים”.</li>
+          <li><strong>דיוק תחרותי:</strong> עבודה עם מודלים וכלים מתקדמים שנותנים תמונת שוק חדה.</li>
+          <li><strong>מתאים לכל שלב:</strong> מעסק חדש לגמרי ועד עסק חזק שרוצה לגדול עוד.</li>
+        </ul>
+
+        <div class="section-title">העיקרון</div>
+        <p>
+          <strong>אם לא קיבלת תוצאות — אתה לא אמור לשלם. נקודה.</strong>
+        </p>
+      </aside>
+    </div>
+
+    <section class="card" aria-label="AEO וקידום בפלטפורמות AI">
+      <h2>קידום בפלטפורמות AI ו-AEO — העתיד כבר כאן</h2>
+
+      <p>
+        מעבר לגוגל הקלאסי, RankMind מתמחה גם בעולם החדש של
+        <strong>AEO — Answer Engine Optimization</strong>.
+      </p>
+
+      <p>
+        יותר ויותר אנשים לא מחפשים היום רק בגוגל — הם שואלים שאלות ב־
+        <strong>ChatGPT</strong>, <strong>Gemini</strong>, <strong>Perplexity</strong>, <strong>Claude</strong>
+        וכלי AI נוספים.
+        מי שלא מופיע שם — פשוט <strong>לא קיים</strong>.
+      </p>
+
+      <ul class="list">
+        <li><strong>קריא למודלים של AI:</strong> מבנה תוכן וטכני שמאפשר הבנה נכונה של האתר.</li>
+        <li><strong>בנוי לשאלות אמיתיות:</strong> התאמה מדויקת לאיך שלקוחות באמת שואלים ומחליטים.</li>
+        <li><strong>להיות ההמלצה:</strong> לא רק “מקום ראשון בגוגל”, אלא העסק שמקבל את ההצעה.</li>
+      </ul>
+
+      <p style="margin-top:12px;">
+        זו לא מגמה — זו מהפכה. מי שנכנס עכשיו, מוביל.
+      </p>
+
+      <div class="hero-actions" style="margin-top:14px;">
+        <a class="btn primary" href="/he/contact">בדיקה: האם העסק מופיע ב-AI?</a>
+        <a class="btn" href="/he/">לצפייה בתוצאות (תיק עבודות)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div style="font-weight:900; color: var(--text);">RankMind</div>
+        <div style="margin-top:6px;">SEO, פרסום בגוגל ו-AEO — ממוקד שיחות והמרות.</div>
+      </div>
+      <div class="footer-links" aria-label="קישורים בתחתית האתר">
+        <a href="/he/privacy">פרטיות</a>
+        <a href="/he/terms">תנאים</a>
+        <a href="/he/contact">צור קשר</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
