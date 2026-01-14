@@ -1,229 +1,28 @@
-<!doctype html>
+<!-- About\index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>About Tal Hadad | RankMind</title>
-  <meta name="description" content="Meet Tal Hadad, founder of RankMind. Software engineer turned performance-driven SEO & AEO specialist focused on real results: calls and conversions." />
+  <meta name="description" content="Meet Tal Hadad, founder of RankMind. Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
+  <meta name="author" content="RankMind">
+  <link rel="canonical" href="https://www.rankmind.net/About/">
+  
+  <meta property="og:title" content="About | RankMind">
+  <meta property="og:description" content="Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
+  <meta property="og:image" content="https://www.rankmind.net/Images/share-preview.png">
+  <meta property="og:url" content="https://www.rankmind.net/About/">
+  <meta property="og:site_name" content="RankMind">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About | RankMind">
+  <meta name="twitter:description" content="Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
+  <meta name="twitter:image" content="https://www.rankmind.net/Images/share-preview.png">
 
-  <!-- Canonical (update to your real URL) -->
-  <link rel="canonical" href="https://rankmind.example/about-tal" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="About Tal Hadad | RankMind" />
-  <meta property="og:description" content="Software engineer turned performance-driven SEO & AEO specialist focused on real results: calls and conversions." />
-  <meta property="og:url" content="https://rankmind.example/about-tal" />
-  <meta property="og:site_name" content="RankMind" />
-  <!-- Optional OG image -->
-  <!-- <meta property="og:image" content="https://rankmind.example/assets/og/about-tal.jpg" /> -->
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About Tal Hadad | RankMind" />
-  <meta name="twitter:description" content="Software engineer turned performance-driven SEO & AEO specialist focused on real results: calls and conversions." />
-
-  <!-- Styles: keep your existing global CSS if you have it -->
-  <!-- <link rel="stylesheet" href="/assets/css/main.css" /> -->
-  <!-- <link rel="stylesheet" href="/assets/css/ui.css" /> -->
-
-  <style>
-    /* Minimal, self-contained styling so this page looks solid even without other CSS.
-       If you already have a design system, you can remove most of this and map classes to yours. */
-
-    :root {
-      --bg: #0b0b0e;
-      --card: rgba(255,255,255,0.06);
-      --text: rgba(255,255,255,0.92);
-      --muted: rgba(255,255,255,0.72);
-      --line: rgba(255,255,255,0.12);
-      --accent: #00d5ff;
-      --accent2: #7c5cff;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,0.35);
-      --max: 980px;
-    }
-
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    a { color: inherit; text-decoration: none; }
-    a:hover { opacity: 0.92; }
-
-    .topbar {
-      position: sticky; top: 0; z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(11,11,14,0.7);
-      border-bottom: 1px solid var(--line);
-    }
-    .nav {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 18px;
-      gap: 16px;
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      letter-spacing: 0.2px;
-    }
-    .brand-mark {
-      width: 12px; height: 12px; border-radius: 4px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(0,213,255,0.10);
-    }
-    .navlinks {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      color: var(--muted);
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .navlinks a {
-      padding: 8px 10px;
-      border-radius: 12px;
-    }
-    .navlinks a:hover {
-      background: rgba(255,255,255,0.06);
-      color: var(--text);
-    }
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      border-radius: 14px;
-      font-weight: 800;
-      font-size: 14px;
-      border: 1px solid rgba(0,213,255,0.35);
-      background: linear-gradient(135deg, rgba(0,213,255,0.16), rgba(124,92,255,0.10));
-      box-shadow: 0 0 0 6px rgba(0,213,255,0.06);
-      white-space: nowrap;
-    }
-
-    main { max-width: var(--max); margin: 0 auto; padding: 22px 18px 64px; }
-    .hero {
-      margin-top: 10px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      background:
-        radial-gradient(900px 420px at 15% 10%, rgba(0,213,255,0.18), transparent 55%),
-        radial-gradient(700px 360px at 85% 20%, rgba(124,92,255,0.16), transparent 55%),
-        rgba(255,255,255,0.03);
-    }
-    .hero-inner { padding: 28px 22px; }
-    .kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.05);
-      color: var(--muted);
-      font-weight: 700;
-      font-size: 13px;
-    }
-    h1 { margin: 14px 0 10px; font-size: 34px; line-height: 1.15; }
-    .lead { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 78ch; }
-    .hero-actions {
-      display: flex; flex-wrap: wrap; gap: 10px;
-      margin-top: 18px;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 14px;
-      border-radius: 14px;
-      font-weight: 800;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.05);
-      color: var(--text);
-    }
-    .btn.primary {
-      border-color: rgba(0,213,255,0.35);
-      background: linear-gradient(135deg, rgba(0,213,255,0.22), rgba(124,92,255,0.12));
-    }
-    .btn:hover { transform: translateY(-1px); transition: transform 120ms ease; }
-
-    .grid { display: grid; gap: 14px; margin-top: 14px; }
-    .two { grid-template-columns: 1.2fr 0.8fr; }
-    @media (max-width: 900px) { .two { grid-template-columns: 1fr; } }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,0.04);
-      box-shadow: var(--shadow);
-      padding: 18px 18px;
-    }
-    .card h2 { margin: 0 0 10px; font-size: 20px; }
-    .card p { margin: 0 0 10px; color: var(--muted); line-height: 1.75; }
-    .card p:last-child { margin-bottom: 0; }
-
-    .list {
-      margin: 10px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-    .list li {
-      padding: 12px 12px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.04);
-      color: var(--muted);
-      line-height: 1.55;
-    }
-    .list strong { color: var(--text); }
-
-    .section-title {
-      margin: 22px 0 10px;
-      font-size: 18px;
-      color: var(--text);
-      font-weight: 900;
-      letter-spacing: 0.2px;
-    }
-
-    .quote {
-      border-left: 3px solid rgba(0,213,255,0.55);
-      padding-left: 14px;
-      margin: 12px 0 0;
-      color: var(--muted);
-      line-height: 1.75;
-      font-style: italic;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      margin-top: 40px;
-      padding: 22px 18px;
-      color: var(--muted);
-    }
-    .footer-inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .footer-links { display: flex; gap: 12px; flex-wrap: wrap; }
-    .footer-links a { padding: 6px 10px; border-radius: 12px; border: 1px solid transparent; }
-    .footer-links a:hover { border-color: var(--line); background: rgba(255,255,255,0.04); }
-  </style>
+  <title>About | RankMind</title>
+  <link rel="stylesheet" href="./about.css">
 
   <!-- JSON-LD: Person + Organization + WebPage -->
   <script type="application/ld+json">
