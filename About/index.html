@@ -2,54 +2,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="RankMind" />
+  <meta name="theme-color" content="#111111" />
+  <meta http-equiv="Content-Language" content="en" />
 
-  <meta name="description" content="Meet Tal Hadad, founder of RankMind. Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
-  <meta name="author" content="RankMind">
-  <link rel="canonical" href="https://www.rankmind.net/About/">
-  
-  <meta property="og:title" content="About | RankMind">
-  <meta property="og:description" content="Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
-  <meta property="og:image" content="https://www.rankmind.net/Images/share-preview.png">
-  <meta property="og:url" content="https://www.rankmind.net/About/">
-  <meta property="og:site_name" content="RankMind">
-  <meta property="og:type" content="website">
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About | RankMind">
-  <meta name="twitter:description" content="Software engineer and performance-driven SEO & AEO specialist focused on real results: calls and conversions.">
-  <meta name="twitter:image" content="https://www.rankmind.net/Images/share-preview.png">
+  <title>About RankMind | SEO & AI Search Visibility (AEO)</title>
+  <meta name="description"
+    content="Learn about RankMind and its founder, Tal Hadad—software engineer and performance-driven SEO & AI Search Visibility (AEO) specialist focused on real business outcomes." />
 
-  <title>About | RankMind</title>
-  <link rel="stylesheet" href="./about.css">
+  <link rel="canonical" href="https://www.rankmind.net/About/" />
 
-  <!-- JSON-LD: Person + Organization + WebPage -->
+  <link rel="alternate" hreflang="en" href="https://www.rankmind.net/About/" />
+  <link rel="alternate" hreflang="he" href="https://www.rankmind.net/he/About/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.rankmind.net/About/" />
+
+  <meta property="og:site_name" content="RankMind" />
+  <meta property="og:title" content="About RankMind" />
+  <meta property="og:description"
+    content="Meet Tal Hadad, founder of RankMind—software engineer and performance-driven SEO & AI Search Visibility (AEO) specialist." />
+  <meta property="og:url" content="https://www.rankmind.net/About/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.rankmind.net/Images/share-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RankMind - AI Search Visibility & SEO" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About RankMind" />
+  <meta name="twitter:description"
+    content="Learn about RankMind and its founder, focused on SEO, AI Search Visibility (AEO), and measurable growth." />
+  <meta name="twitter:image" content="https://www.rankmind.net/Images/share-preview.png" />
+
+  <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="../Styles/ui.css" />
+  <link rel="stylesheet" href="../Styles/pages.css" />
+  <link rel="stylesheet" href="./about.css" />
+  <link rel="stylesheet" href="../Styles/footer.css" />
+
+  <!-- Structured Data: Person + Organization + WebPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Person",
+        "@id": "https://www.rankmind.net/About/#tal-hadad",
         "name": "Tal Hadad",
         "jobTitle": "Founder",
-        "worksFor": { "@type": "Organization", "name": "RankMind" },
-        "description": "Software engineer turned performance-driven SEO & AEO specialist focused on calls and conversions.",
-        "nationality": "Israeli",
-        "knowsAbout": ["SEO", "Google Ads", "Answer Engine Optimization", "AEO", "Technical SEO", "Content Strategy", "Local SEO"]
+        "worksFor": { "@id": "https://www.rankmind.net/#organization" },
+        "description": "Software engineer and performance-driven SEO & AI Search Visibility (AEO) specialist focused on measurable business outcomes.",
+        "knowsAbout": [
+          "SEO",
+          "Answer Engine Optimization",
+          "AI Search Visibility",
+          "Technical SEO",
+          "Content Strategy",
+          "Google Ads",
+          "Local SEO"
+        ]
       },
       {
         "@type": "Organization",
+        "@id": "https://www.rankmind.net/#organization",
         "name": "RankMind",
-        "description": "RankMind helps businesses grow with SEO, Google Ads, and AEO—optimized for both Google and AI answer engines.",
-        "brand": { "@type": "Brand", "name": "RankMind" }
+        "url": "https://www.rankmind.net/",
+        "logo": "https://www.rankmind.net/Images/logo.png"
       },
       {
-        "@type": "WebPage",
-        "name": "About Tal Hadad | RankMind",
-        "inLanguage": "en",
-        "isPartOf": { "@type": "WebSite", "name": "RankMind" },
-        "about": { "@type": "Person", "name": "Tal Hadad" }
+        "@type": "AboutPage",
+        "@id": "https://www.rankmind.net/About/#about",
+        "url": "https://www.rankmind.net/About/",
+        "name": "About RankMind",
+        "isPartOf": { "@id": "https://www.rankmind.net/#website" },
+        "about": { "@id": "https://www.rankmind.net/About/#tal-hadad" },
+        "inLanguage": "en"
       }
     ]
   }
