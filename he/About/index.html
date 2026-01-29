@@ -2,55 +2,99 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="RankMind" />
+  <meta name="theme-color" content="#111111" />
+  <meta http-equiv="Content-Language" content="he" />
 
-  <meta name="description" content="הכירו את טל חדד, מייסד RankMind. מהנדס תוכנה שהפך למומחה קידום ביצועים, SEO ו-AEO עם מיקוד בשיחות והמרות.">
-  <meta name="author" content="RankMind">
-  <link rel="canonical" href="https://www.rankmind.net/he/About/">
-  
-  <meta property="og:title" content="אודות | RankMind">
-  <meta property="og:description" content="מהנדס תוכנה שהפך למומחה SEO ו-AEO ממוקד תוצאות אמיתיות: שיחות והמרות.">
-  <meta property="og:image" content="https://www.rankmind.net/Images/share-preview.png">
-  <meta property="og:url" content="https://www.rankmind.net/he/About/">
-  <meta property="og:site_name" content="RankMind">
-  <meta property="og:type" content="website">
+  <title>אודות RankMind | SEO ונראות ב-AI (AEO)</title>
+  <meta name="description"
+    content="הכירו את טל חדד, מייסד RankMind — מהנדס תוכנה שהפך למומחה SEO ונראות ב-AI (AEO), עם מיקוד בתוצאות אמיתיות: שיחות, לידים והמרות." />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RankMind | קידום אתרים ושיווק בעידן ה-AI">
-  <meta name="twitter:description" content="הצמיחו את העסק עם SEO, AEO ונראות בכלי AI — לצד אתר מהיר שממיר.">
-  <meta name="twitter:image" content="https://www.rankmind.net/Images/share-preview.png">
-  
-  <title>אודות | RankMind</title>
-  <link rel="stylesheet" href="./about.css">
+  <link rel="canonical" href="https://www.rankmind.net/he/About/" />
 
-  <!-- JSON-LD: Person + Organization + WebPage -->
+  <link rel="alternate" hreflang="en" href="https://www.rankmind.net/About/" />
+  <link rel="alternate" hreflang="he" href="https://www.rankmind.net/he/About/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.rankmind.net/About/" />
+
+  <meta property="og:site_name" content="RankMind" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="אודות RankMind" />
+  <meta property="og:description"
+    content="הכירו את טל חדד — מהנדס תוכנה ומומחה SEO ונראות ב-AI (AEO), ממוקד תוצאות אמיתיות: שיחות והמרות." />
+  <meta property="og:url" content="https://www.rankmind.net/he/About/" />
+  <meta property="og:image" content="https://www.rankmind.net/Images/share-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RankMind - אודות" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="אודות RankMind" />
+  <meta name="twitter:description" content="SEO ונראות ב-AI (AEO) עם מיקוד בתוצאות אמיתיות: שיחות, לידים והמרות." />
+  <meta name="twitter:image" content="https://www.rankmind.net/Images/share-preview.png" />
+
+  <link rel="icon" type="image/x-icon" href="/Images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/Images/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <link rel="stylesheet" href="../../Styles/ui.css" />
+  <link rel="stylesheet" href="../../Styles/pages.css" />
+  <link rel="stylesheet" href="./about.css" />
+  <link rel="stylesheet" href="../../Styles/footer.css" />
+  <link rel="stylesheet" href="../he.css" />
+
+  <!-- Structured Data: Person + Organization + AboutPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://www.rankmind.net/#organization",
+        "name": "RankMind",
+        "url": "https://www.rankmind.net/",
+        "logo": "https://www.rankmind.net/Images/logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.rankmind.net/#website",
+        "url": "https://www.rankmind.net/",
+        "name": "RankMind",
+        "publisher": { "@id": "https://www.rankmind.net/#organization" }
+      },
+      {
         "@type": "Person",
+        "@id": "https://www.rankmind.net/he/About/#tal-hadad",
         "name": "טל חדד",
         "alternateName": "Tal Hadad",
         "jobTitle": "מייסד",
-        "worksFor": { "@type": "Organization", "name": "RankMind" },
-        "description": "מהנדס תוכנה שהפך למומחה SEO ו-AEO ממוקד תוצאות: שיחות והמרות, עם שקיפות מלאה.",
-        "nationality": "Israeli",
-        "knowsAbout": ["SEO", "Google Ads", "AEO", "Answer Engine Optimization", "Technical SEO", "Content Strategy", "Local SEO"]
+        "worksFor": { "@id": "https://www.rankmind.net/#organization" },
+        "description": "מהנדס תוכנה ומומחה SEO ונראות ב-AI (AEO), ממוקד תוצאות אמיתיות: שיחות, לידים והמרות.",
+        "knowsAbout": [
+          "SEO",
+          "Answer Engine Optimization",
+          "AEO",
+          "AI Search Visibility",
+          "Technical SEO",
+          "Content Strategy",
+          "Google Ads",
+          "Local SEO"
+        ]
       },
       {
-        "@type": "Organization",
-        "name": "RankMind",
-        "description": "RankMind מקדמת עסקים עם SEO, פרסום בגוגל ו-AEO — מותאם גם לגוגל וגם למנועי תשובות מבוססי AI.",
-        "brand": { "@type": "Brand", "name": "RankMind" }
-      },
-      {
-        "@type": "WebPage",
-        "name": "אודות טל חדד | RankMind",
+        "@type": "AboutPage",
+        "@id": "https://www.rankmind.net/he/About/#about",
+        "url": "https://www.rankmind.net/he/About/",
+        "name": "אודות RankMind",
         "inLanguage": "he",
-        "isPartOf": { "@type": "WebSite", "name": "RankMind" },
-        "about": { "@type": "Person", "name": "טל חדד" }
+        "isPartOf": { "@id": "https://www.rankmind.net/#website" },
+        "about": { "@id": "https://www.rankmind.net/he/About/#tal-hadad" }
       }
     ]
   }
