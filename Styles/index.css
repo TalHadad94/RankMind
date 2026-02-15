@@ -270,6 +270,105 @@
   z-index: 0;
 }
 
+/* =========================================================
+   Scroll scene: Our Process (pinned + scroll-scrubbed reveal)
+   Enabled by ./Scripts/scroll-scenes.js
+   ========================================================= */
+
+.our-process.rm-scene {
+  /* Pin duration: 1.5 screens => total section height = 2.5 * viewport */
+  height: 300vh;
+  padding: 0;
+
+  /* Subtle "shape into view" ramp (JS drives --rm-shape 0..1) */
+  border-radius: calc(14px - (14px * var(--rm-shape, 0)));
+  transform: scale(calc(0.985 + (0.015 * var(--rm-shape, 0))));
+  transform-origin: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.our-process.rm-scene .our-process-inner {
+  position: sticky;
+  top: calc(var(--rm-header-offset, 0px) + 18px);
+  min-height: calc(100vh - var(--rm-header-offset, 0px) - 18px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 4rem 1.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* The line becomes scroll-driven */
+.our-process.rm-scene .process-steps::before {
+  transform-origin: top;
+  transform: scaleY(var(--rm-line, 0));
+}
+
+/* Prep for scroll-scrubbed reveal (JS drives opacity/transform) */
+.our-process.rm-scene .process-step {
+  opacity: 0;
+  transform: translateY(16px);
+  will-change: transform, opacity;
+}
+
+.our-process.rm-scene .step-circle,
+.our-process.rm-scene .step-content {
+  will-change: transform, opacity;
+}
+
+/* Reduced motion: disable the pinned scene */
+@media (prefers-reduced-motion: reduce) {
+  .our-process.rm-scene {
+    height: auto;
+    transform: none;
+    border-radius: 10px;
+  }
+
+  .our-process.rm-scene .our-process-inner {
+    position: static;
+    min-height: auto;
+  }
+
+  .our-process.rm-scene .process-steps::before {
+    transform: none;
+  }
+
+  .our-process.rm-scene .process-step {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Allow steps list to shift up slightly during the scene (JS drives --rm-steps-shift) */
+.our-process.rm-scene .process-steps {
+  transform: translateY(var(--rm-steps-shift, 0px));
+  will-change: transform;
+}
+
+/* After scene completed once: disable pinning + extra scroll, keep section static */
+.our-process.rm-scene-done {
+  height: auto !important;
+  transform: none !important;
+}
+
+.our-process.rm-scene-done .our-process-inner {
+  position: static !important;
+  top: auto !important;
+  min-height: auto !important;
+}
+
+.our-process.rm-scene-done .process-step {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.our-process.rm-scene-done .process-steps::before {
+  transform: scaleY(1) !important;
+}
+
 .cta-section {
   background: linear-gradient(135deg, #202020, #1f1f1f);
   color: white;
